@@ -66,17 +66,6 @@ valgrind:
 
 valgrind_check: 
 	valgrind --leak-check=full --track-origins=yes --trace-children=yes -s ./$(BUILD_DIR)/unit-tests
-	
-check:
-	@echo ---------------------CLANG_FORMAT----------------------
-	@cp ../materials/linters/.clang-format .clang-format
-	@clang-format -verbose -n *.h $(TESTS_DIR)/*.h 2>&1 | tee clang_format_output.txt
-	@rm .clang-format
-	@echo -------------------------------------------------
-	@echo "CLANG output:"
-	@cat clang_format_output.txt
-	@echo -------------------------------------------------
-	@rm clang_format_output.txt
 
 rebuild:	clean	test
 
