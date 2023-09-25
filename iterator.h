@@ -6,7 +6,11 @@
 namespace ns {
 
 template <typename T>
+<<<<<<< HEAD
 class RAIter {  // universal random access iterator for the vector, array, stack and queue 
+=======
+class RAIter {  // uneversal random access iterator for the vector, array, stack and queue 
+>>>>>>> 97c2e65... The comments added in iterator.h
  public:
   using value_type = T;
   using difference_type = ptrdiff_t;
@@ -107,7 +111,11 @@ RAIter<T> operator-(const typename RAIter<T>::difference_type lhs,
 }
 
 template <typename T, typename Node>
+<<<<<<< HEAD
 class BDIter {  // universal bidirectional iterator for the red-black tree, map, set, multiset and list
+=======
+class BDIter {  // universal bidirectional iterator for the rb tree, map, set, multiset and list
+>>>>>>> 97c2e65... The comments added in iterator.h
  public:
   using value_type = T;
   using pointer = value_type*;
