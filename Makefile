@@ -65,10 +65,13 @@ valgrind:
 	CK_FORK=no valgrind --tool=memcheck ./$(BUILD_DIR)/unit-tests
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 valgrind_check: 
 	valgrind --leak-check=full --track-origins=yes --trace-children=yes -s ./$(BUILD_DIR)/unit-tests
 
 >>>>>>> 5c25649... With this commit I fix an error in Makefile\n\nCommand 'check' has been deleted
+=======
+>>>>>>> 6502ff3... Delete the rule
 rebuild:	clean	test
 
