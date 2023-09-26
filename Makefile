@@ -64,8 +64,5 @@ leaks:
 valgrind:
 	CK_FORK=no valgrind --tool=memcheck ./$(BUILD_DIR)/unit-tests
 
-valgrind_check: 
-	valgrind --leak-check=full --track-origins=yes --trace-children=yes -s ./$(BUILD_DIR)/unit-tests
-
 rebuild:	clean	test
 
